@@ -9,7 +9,6 @@ class ComplianceAgent:
         """
         Initialize the ComplianceAgent with the Gemini API.
         """
-        # Configure Gemini API with the key from .env
         self.model = genai.GenerativeModel('gemini-1.5-flash-latest')
         genai.configure(api_key=os.getenv("GEMINIKEY"))
         self.prompt_template = """
@@ -32,15 +31,11 @@ class ComplianceAgent:
         :param documents: List of documents retrieved by the QueryAgent.
         :return: The generated answer as a string.
         """
-        # Combine the content of the documents
         context = "\n\n".join([doc for doc in documents])
-        # Format the prompt
         prompt = self.prompt_template.format(question=question, context=context)
 
-        # Call the Gemini API for response generation
         response = self.model.generate_content(
             prompt
         ).text
 
-        # Extract the generated text
         return response

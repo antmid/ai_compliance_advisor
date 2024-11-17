@@ -3,6 +3,9 @@ from langchain_chroma import Chroma
 from langchain.embeddings.base import Embeddings
 from dotenv import load_dotenv
 import os
+from langchain_community.document_loaders import TextLoader
+#from langchain_openai import OpenAIEmbeddings
+from langchain_text_splitters import CharacterTextSplitter
 
 load_dotenv()
 
@@ -32,51 +35,29 @@ class HuggingFaceEmbeddings(Embeddings):
 
 
 class QueryAgent:
-    def __init__(self, db_path="data/database/absolute_database", embedding_model="sentence-transformers/all-mpnet-base-v2"):
+    def __init__(self, db_path="data/database/gdpr_database"):
         """
         Initialize the QueryAgent with HuggingFace embeddings and vector database.
         :param db_path: Path to the directory containing the vector database.
-        :param embedding_model: Pretrained HuggingFace embedding model.
         """
         # Initialize HuggingFace embeddings
-        self.embedding_model = HuggingFaceEmbeddings(embedding_model)
+        embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+
+        # Load and split raw documents
+        raw_documents = TextLoader('data/cleaned/GDPR.txt').load()
+        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+        documents = text_splitter.split_documents(raw_documents)
 
         # Load the existing database with the embedding function
-        self.vector_db = Chroma(
-            persist_directory=db_path,
-            embedding_function=self.embedding_model  # Embedding function is required for queries
-        )
-        self.retriever = self.vector_db.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+        self.vector_db = Chroma.from_documents(documents, embedding_model, persist_directory=db_path)
 
-    def query(self, question):
+    def query(self, question: str) -> str:
         """
         Retrieve relevant documents from the vector database.
 
         :param question: The user question as a string.
-        :return: List of relevant documents.
+        :return: Content of the most relevant document as a string.
         """
-        results = self.retriever.invoke(question)
-        return results
-
-
-    def list_documents(self):
-        """
-        List all the documents stored in the vector database.
-        """
-        docs = self.vector_db._collection.get()  # Access the stored documents
-        if docs and "documents" in docs:
-            for idx, doc in enumerate(docs["documents"]):
-                print(f"Document {idx + 1}: {doc}")
-        else:
-            print("No documents found in the database.")
-
-    def debug_database(self):
-        """
-        Check the number of documents in the existing vector database.
-        """
-        try:
-            count = self.vector_db._collection.count()
-            print(f"Number of documents in the database: {count}")
-        except Exception as e:
-            print(f"Error checking database: {e}")
+        results = self.vector_db.similarity_search(question)
+        return results[0].page_content if results else "No relevant documents found."
 

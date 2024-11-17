@@ -5,14 +5,15 @@ from agents.compliance_agent import ComplianceAgent
 query_agent = QueryAgent()
 compliance_agent = ComplianceAgent()
 
-query_agent.debug_database()
+#query_agent.debug_database()
 
 # Example user query
 user_question = "What does the GDPR regulate?"
 
 # 1. Retrieve relevant documents
-documents = query_agent.query(user_question)
+#documents = query_agent.query(user_question)
 
+documents = query_agent.query("What are the key points of GDPR?")
 
 # 2. Generate a structured response
 if documents:

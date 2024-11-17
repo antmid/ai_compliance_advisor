@@ -3,6 +3,8 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from uuid import uuid4
+from langchain_community.document_loaders import TextLoader
+from langchain_text_splitters import CharacterTextSplitter
 
 # Load environment variables
 load_dotenv()
@@ -11,32 +13,16 @@ load_dotenv()
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 
 # Initialize Chroma vector store
-vector_store = Chroma(
+'''vector_store = Chroma(
     collection_name="gdpr_collection",
     embedding_function=embeddings,
     persist_directory="data/database/absolute_database",  # Directory where the database will be saved
-)
+)'''
 
-# GDPR Sections
-gdpr_sections = [
-    "Introduction to GDPR: The General Data Protection Regulation...",
-    "Objectives of GDPR: Protect personal data...",
-    "What is Personal Data?: Personal data includes...",
-    # Add the remaining sections here...
-]
+raw_documents = TextLoader('data/cleaned/GDPR.txt').load()
+text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+documents = text_splitter.split_documents(raw_documents)
 
-# Convert GDPR sections into Documents
-documents_vector = []
-for idx, section in enumerate(gdpr_sections):
-    document = Document(
-        page_content=section.strip(),
-        metadata={"source": f"GDPR Section {idx + 1}"},  # Metadata to identify the section
-    )
-    documents_vector.append(document)
+db = Chroma.from_documents(documents, embeddings, collection_name="gdpr_collection",persist_directory="data/database/gdpr_database" )
 
-# Add documents to the vector store
-uuids = [str(uuid4()) for _ in range(len(documents_vector))]
-vector_store.add_documents(documents=documents_vector, ids=uuids)
 
-# The database will persist automatically if persist_directory is set
-print("GDPR sections have been added to the vector database and saved successfully!")

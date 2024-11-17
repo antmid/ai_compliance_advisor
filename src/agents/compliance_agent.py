@@ -1,16 +1,17 @@
-from transformers import pipeline
+import google.generativeai as genai
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 class ComplianceAgent:
-    def __init__(self, model="Gemini", temperature=0.7):
+    def __init__(self):
         """
-        Initialize the ComplianceAgent with the Gemini LLM.
-        :param model: Gemini model identifier (or a HuggingFace-compatible LLM).
-        :param temperature: Generation temperature.
+        Initialize the ComplianceAgent with the Gemini API.
         """
-        # Initialize the LLM pipeline
-        self.llm = pipeline("text-generation", model=model, device=0)  # Ensure your model is on the correct device
-        self.temperature = temperature
+        # Configure Gemini API with the key from .env
+        genai.configure(api_key=os.getenv("GEMINIKEY"))
+        self.model = "gemini-1.5-flash"  # Specify the Gemini model
         self.prompt_template = """
         Answer the following question using only the provided documents as context.
         If no useful information is found in the documents, state that no relevant data was found.
@@ -35,6 +36,14 @@ class ComplianceAgent:
         context = "\n\n".join([doc.page_content for doc in documents])
         # Format the prompt
         prompt = self.prompt_template.format(question=question, context=context)
-        # Generate the response
-        response = self.llm(prompt, max_length=500, num_return_sequences=1, temperature=self.temperature)
-        return response[0]['generated_text']
+
+        # Call the Gemini API for response generation
+        response = genai.generate_text(
+            model=self.model,
+            prompt=prompt,
+            temperature=0.7,
+            max_output_tokens=500
+        )
+
+        # Extract the generated text
+        return response.result

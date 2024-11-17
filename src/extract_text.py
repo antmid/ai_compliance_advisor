@@ -8,6 +8,7 @@ processed_folder = "data/processed/"
 
 os.makedirs(processed_folder, exist_ok=True)
 
+
 def extract_text_from_pdf(pdf_path, output_path):
     try:
         reader = PdfReader(pdf_path)

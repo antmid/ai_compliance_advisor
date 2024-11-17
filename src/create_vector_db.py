@@ -3,6 +3,12 @@ import chromadb
 import google.generativeai as genai
 from chromadb import Documents, EmbeddingFunction, Client
 from chromadb.config import Settings  # Import corretto per Settings
+from dotenv import load_dotenv
+import os
+import pandas as pd
+
+# Carica il file .env
+load_dotenv()
 
 # Configurazione della cartella con i documenti
 cleaned_folder = "data/cleaned/"
@@ -11,7 +17,7 @@ cleaned_folder = "data/cleaned/"
 persist_directory = "data/chroma_vector_db"
 
 # Configura l'API Key di Google Gemini
-API_KEY = ''  # Usa una variabile d'ambiente per la chiave API
+API_KEY = os.getenv("GEMINIKEY")  # Usa una variabile d'ambiente per la chiave API
 if not API_KEY:
     raise ValueError("Assicurati di configurare GOOGLE_API_KEY con la tua chiave Gemini API.")
 genai.configure(api_key=API_KEY)
@@ -21,7 +27,7 @@ class GeminiEmbeddingFunction(EmbeddingFunction):
     def __call__(self, input: Documents) -> list:
         model = "models/embedding-001"
         title = "Custom query"
-        return genai.embed_content(model=model, content=input, task_type="RETRIEVAL_DOCUMENT", title=title)["embedding"]
+        return genai.embed_content(model=model, content=input, task_type="retrieval_document", title=title)["embedding"]
 
 # Funzione per la creazione del database vettoriale
 def create_vector_database():
@@ -49,8 +55,6 @@ def create_vector_database():
 
     print(f"Vectorial DB created and saved at: {persist_directory}")
 
-# Creazione del database vettoriale
-create_vector_database()
 
 # Caricamento del database salvato per verificare la persistenza
 def load_and_verify_db():
@@ -59,7 +63,10 @@ def load_and_verify_db():
     # Verifica il numero di documenti nel database
     print(f"Numero di documenti nella collezione: {collection.count()}")
 
-load_and_verify_db()
+
+if __name__ == "__main__":
+    create_vector_database()
+    load_and_verify_db()
 
 
 

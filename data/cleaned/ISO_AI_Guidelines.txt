@@ -1,0 +1,1078 @@
+SC 42 Artificial IntelligenceOverview  major standardization achievements of the
+International Standardization Committee
+ISOIEC JTC 1SC 42 Artificial Intelligence
+Peter Deussen
+peter.deussenmicrosoft.comSC 42 Artificial Intelligence Agenda
+ Scope
+ SC 42s role
+ Participation
+ Growth
+ Outreach
+ Collaboration with CEN-
+CENELECJTC 21
+Overview
+ Published standards
+ Ongoing projects
+ Work under preparation
+Work
+programme
+ Working groups
+ Ad-hoc and Advisory
+Groups
+Structure
+ Concepts and
+terminology
+ Overview of ethical and
+societal concerns
+ Data quality for analytics
+and machine learning
+ML
+Highlights
+11282022 The Role of International Standards in Artificial Intelligence AI 2SC 42 Artificial Intelligence
+SC 42 Overview
+11282022 The Role of International Standards in Artificial Intelligence AI 3SC 42 Artificial Intelligence
+Scope
+Standardization in the area of Artificial Intelligence
+Serve as the focus and proponent for JTC 1's standardization program on Artificial
+Intelligence
+Provide guidance to JTC 1, IEC, and ISO committees developing Artificial Intelligence
+applications
+Established: 2017, Beijing
+Committee Manager: Heather Benko ANSI
+Chairperson: Wael William Diab USISOIEC JTC 1SC 42
+Artificial Intelligence
+11282022 The Role of International Standards in Artificial Intelligence AI 4SC 42 Artificial Intelligence SC 42s role
+An Ecosystem Approach
+Application
+domain
+requirementsRegulatory and
+policy
+requirementsEmerging
+societal
+requirementsBusiness
+requirements. . .
+Assimilating requirements for context of use of AI, big data and analytics
+Horizontal and foundational projects
+Enabling and accelerating wide adoption while addressing concerns
+Foundational
+conceptsDataReference
+architecturesUse
+casesApplication
+guidelines
+Frameworks Guidance Interop MSS
+Application standards
+domain-specific standards that build
+on horizontal SC 42 horizontal
+deliverables Open-source projects
+including AI approaches leveraging
+SC 42 ecosysystem deliverables Propriatary solutions
+leveraging SC 42 deliverables for
+governance and guidance
+Implementation across diverse application domains
+e.g., AI-enabled smart manufacturing, health care, finance, consumer devices, ITCNon-technical trends
+and requirements
+SC 42 ecosystem
+perspective
+SC 42
+Sc 42
+deliverables
+Ecosystem
+deliverables
+Implementations
+11282022 The Role of International Standards in Artificial Intelligence AI 5SC 42 Artificial Intelligence
+SC 42 Achievements
+World-wide participation
+35 Participating Members
+16 Observing Members
+11282022 The Role of International Standards in Artificial Intelligence AI 6SC 42 Artificial Intelligence
+Projects: 15 published 25 active
+Participation
+ 51 NBs 35P16O despite economic headwinds
+ 250 people at virtual
+ 50 liaisons 13 Cat A
+Growth in the diversity of the work program and ecosystem coverage: Extension of existing areas
+across including:
+New areas include AI Testing, Verification and Validation jointly with SC 7; AI-enabled Health
+Informatics jointly with ISO TC 215SC 42 Achievements
+Growth by the numbers
+ MSS related projects to
+enable certificationaudit
+ transparency taxonomy data quality governance;
+ treatment of unwanted
+bias oversight of AI systems
+ use cases revision ML computing devices
+ guidance for mitigating
+ethical issues
+11282022 The Role of International Standards in Artificial Intelligence AI 7SC 42 Artificial Intelligence
+ Over a dozen IEC articles and multimedia engagements
+ Collaboration with the ISO Comms on key articles and outreach plans
+ Support of IEC and ISO AI related initiatives such as IEC Workshop on AI with Trust
+and ISO
+ Progress on existing and new collaborations: IEC SC 65A, ISO 204, 215, SMCC, JTC
+1 SC 7, 27, 29, 32, 38, 39, 40, 41, OECD, EC, UN
+ Launch of ISOIEC Workshop Series
+ Bi-annual workshop series bringing AI luminaries to discuss AI ecosystem including emerging trends,
+technology, requirements, applications and the role of standards.
+ May inaugural workshop had 500 registrations per session and avg 300 attendance.
+ Registration for second workshop in November is open Outreach
+11282022 The Role of International Standards in Artificial Intelligence AI 8SC 42 Artificial Intelligence ISOIEC AI Workshop Series
+Second Workshop on 29th and 30th November 2022 Online
+11282022 The Role of International Standards in Artificial Intelligence AI 9Registration: https:jtc1info.orgtechnologysubcommitteesaiworkshopsw2SC 42 Artificial Intelligence
+JTC 21 is about to adopt various SC 42 deliverables,
+including
+ ISOIEC 22989:2022  Concepts and terminology
+ ISIEC 23053:2022  Machine learning framework
+ ISOIEC 42001:- - Management system
+ ISOIEC 5259 Series on data quality
+ . . .SC 42 is about to establish an AHG to understand
+which JTC 21 projects are candidates for parallel
+development according to the VACollaboration with CENCENELEC JTC 21
+Artificial Intelligence
+Vienna Agreement will be applied for the collaboration between the two committees
+Under discussion: How can SC 42 work be leveraged to address the Standardization
+requests of the European Commission in the context of the Draft AI Act
+11282022 The Role of International Standards in Artificial Intelligence AI 10SC 42 Artificial Intelligence
+SC 42 Work programme overview
+Published standards
+Standards under development
+Work under preparation
+11282022 The Role of International Standards in Artificial Intelligence AI 11SC 42 Artificial Intelligence
+Foundational
+ ISOIEC 22989 AI concepts and terminology
+ ISOIEC 23053 Framework for AI Systems using ML
+Trustworthiness
+ ISOIEC TR 24028 Overview of trustworthiness in artificial intelligence
+ ISOIEC TR 24027 Bias
+ ISOIEC 38507 Governance jointly developed with SC 40
+ ISOIEC TR 24368 Ethics
+ ISOIEC TR 24029-1 Artificial Intelligence AI Assessment of the
+robustness of neural networks  Part 1: Overview
+Use cases and applications
+ ISOIEC TR 24030 Use casesData
+ ISOIEC 20546 Big data  Overview and vocabulary
+ ISOIEC TR 20547 Big data reference architecture
+ Part 1: Framework and application process
+ Part 2: Use cases and derived requirements
+ Part 3: Reference architecture
+ Part 5: Standards roadmap
+Computational
+ ISOIEC 24372 Overview
+ ISOIEC TS 4213:2022  Assessment of machine learning classification
+performanceSC 42 Achievements
+Published standards
+11282022 The Role of International Standards in Artificial Intelligence AI 12SC 42 Artificial Intelligence
+ ISOIEC CD 5259-1 Data quality for analytics and machine learning
+ML
+ Part 1: Overview, terminology, and examples
+ Part 2: Data quality measures
+ Part 3: Data quality management requirements and guidelines
+ Part 4: Data quality process framework
+ Part 5: Data quality governance
+ ISOIEC DIS 5338 AI system life cycle processes
+ ISOIEC CD 5339 Guidelines for AI applications
+ ISOIEC CD 5392 Reference architecture of knowledge engineering
+ ISOIEC CD TR 5469 Functional safety and AI systems
+ ISOIEC AWI TS 5471 Software and systems engineering 
+Systems and software Quality Requirements and Evaluation
+SQuaRE  Guidance for quality evaluation of AI systems
+ ISOIEC AWI TS 6254 Objectives and approaches for explainability
+of ML models and AI systems
+ ISOIEC DIS 8183 Data life cycle framework
+ ISOIEC DIS 25059 Software engineering  Systems and software
+Quality Requirements and Evaluation SQuaRE  Quality model
+for AI systems ISOIEC AWI TS 8200 Controllability of automated artificial
+intelligence systems
+ ISOIEC AWI TS 12791 Treatment of unwanted bias in classification
+and regression machine learning task
+ ISOIEC AWI 12792 Transparency taxonomy of AI systems
+ ISOIEC AWI TS 17847 Verification and validation analysis of AI
+systems
+ ISOIEC AWI TR 17903 Overview of machine learning computing
+devices
+ ISOIEC FDIS 23894 Guidance on risk management
+ ISOIEC DIS 24029-2 Assessment of the robustness of neural
+networks  Part 2: Methodology for the use of formal methods
+ ISOIEC AWI TR 24030 Use cases
+ ISOIEC 24668 Process management framework for big data
+analytics
+ ISOIEC AWI TS 29119-11 Testing for AI systems
+ ISOIEC DIS 42001 Management system
+ ISOIEC AWI 42005 AI system impact assessmentSC 42 Achievements
+Standards under development
+11282022 The Role of International Standards in Artificial Intelligence AI 13SC 42 Artificial Intelligence
+ Currently under combined NP ballotCD consultation:
+ ISOIEC 42006 Requirements for bodies providing audit and certification of artificial intelligence
+management systems
+ Editor: Susanne Kuch DE
+ Explains how to do conformity assessment for ISOIEC 42001, competencies needed for auditors,
+time needed for audit
+ New technical report
+ Environmental sustainability aspects of AISC 42 Achievements
+Work under preparation
+11282022 The Role of International Standards in Artificial Intelligence AI 14SC 42 Artificial Intelligence
+SC 42 Structure
+Working groups
+Ad-hoc and advisory groups
+11282022 The Role of International Standards in Artificial Intelligence AI 15SC 42 Artificial Intelligence
+Working Groups Ad-hoc and Advisory Groups
+WG 1 Foundational standards Paul Cotton CA AG 3 AI standardization
+roadmappingPatrick Bezombes FR
+WG 2 Data Wo Chang IE AHG 4 Liaison with SC 27 Peter Deussen DE
+WG 3 Trustworthiness David Filip IE AHG 6 Considering logistics
+relative to Comment
+Resolutions  CDDIS
+BallotsPaul Cotton CA
+WG 4 Use cases and applications
+WG 5 Computational approaches and
+computational characteristics of
+AI systemsNing Sun CN AHG 7 Considering potential JTC
+21 projects for joint
+development under the
+Vienna AgreementTBD
+JWG 2 Testing of AI systems
+with SC 7Adam Leon Smith SC
+42UK; Stuart Reid SC
+7UK
+JWG 3 AI-enabled Health Informatics
+with ISO TC 215TBDSC 42 Groups
+11282022 The Role of International Standards in Artificial Intelligence AI 16SC 42 Artificial Intelligence
+SC 42 Highlights
+ISOIEC 22989 Concepts and terminology
+ISOIEC TR 24368:2022 Overview of ethical and societal concerns
+ISOIEC 5259 Series on Data quality for analytics and machine learning ML
+11282022 The Role of International Standards in Artificial Intelligence AI 17SC 42 Artificial Intelligence
+Scope
+This document establishes terminology for
+AI and describes concepts in the field of
+AI.
+This document can be used in the
+development of other standards and in
+support of communications among diverse,
+interested parties or stakeholders.
+This document is applicable to all types of
+organizations e.g. commercial
+enterprises, government agencies, not-for-
+profit organizations.Editor: Wei Wei DE
+Current state:
+ Published
+ Defect Editing Group established to
+address editorial problemsSC 42 Highlights
+ISOIEC 22989 Concepts and terminology
+11282022 The Role of International Standards in Artificial Intelligence AI 18SC 42 Artificial Intelligence
+ Definitions of concepts relevant to AI
+ General Concepts
+ Machine learning concepts
+ Examples of machine learning algorithms
+ Autonomy, heteronomy and automation
+ Internet of things and cyber-physical systems
+ Trustworthiness
+ AI verification and validation
+ Jurisdictional issues
+ Societal impact AI stakeholder roles
+ AI system life cycle
+ AI system functional overview
+ AI ecosystem
+ Fields of AI
+ Applications of AI systems
+ Mapping of the AI system lifecycle with the OECDs
+definition of AI system SC 42 Highlights
+ISOIEC 22989 Concepts and terminology
+Maincontents
+11282022 The Role of International Standards in Artificial Intelligence AI 19SC 42 Artificial Intelligence
+artificial intelligence
+AI
+discipline research and development of mechanisms
+and applications of AI systems
+artificial intelligence system
+AI system
+engineered system that generates outputs such as
+content, forecasts, recommendations or decisions for a
+given set of human-defined objectives Result of a 4 years discussion, highly
+controversial and disputed up to the last minute
+ No consensus could be reached on a definition
+of AI as system propertycapability
+ Alignment with OECD, EU definitions was
+intended as they were available during
+development of the projectSC 42 Highlights
+ISOIEC 22989 Concepts and terminology
+AI definition
+11282022 The Role of International Standards in Artificial Intelligence AI 20SC 42 Artificial Intelligence SC 42 Highlights
+ISOIEC 22989 Concepts and terminology
+AI system lifecycle
+Intended to be high-level
+to provide a template
+that can be used for
+other standardization
+workInception
+Objectives
+Requirements
+Risk assessment
+Risk treatment plan
+Polices and compliance
+Design and development
+Approach
+Architecture
+Code
+Training and validation data
+Risk treatment
+Verification and validation
+Test data
+System verification
+Risk monitoring and reviewRe-evaluate
+Evaluate operating results
+Refine objectives
+Refine requirements
+Risk monitoring and review
+Deployment
+Runtime deployment
+Model deployment
+Risk treatment
+Continuous validation
+Test data
+System validation
+Risk management
+Continuous improvementRetirement
+Data disposal
+Model disposal
+Decommission and discardOperation and monitoring
+Operating data input
+Model execution
+Model update
+Risk management
+If using continuous
+learning
+11282022 The Role of International Standards in Artificial Intelligence AI 21SC 42 Artificial Intelligence
+Scope
+This document provides a high-level overview of AI
+ethical and societal concerns.
+In addition, this document;
+provides information in relation to principles,
+processes and methods in this area;
+is intended for technologists, regulators, interest
+groups, and society at large;
+is not intended to advocate for any specific set of
+values value systems.
+This document includes an overview of International
+Standards that address issues arising from AI ethical
+and societal concerns.Editor: Viveka Bonde SE
+Current state: PublishedSC 42 Highlights
+ISOIEC TR 24368:2022 Overview of ethical
+and societal concerns
+11282022 The Role of International Standards in Artificial Intelligence AI 22SC 42 Artificial Intelligence
+ Fundamental sources
+ Ethical frameworks
+ Human rights practices
+ Themes and principles
+ Examples of practices for building and using
+ethical and socially acceptable AI
+ Aligning internal process to AI principles
+ Considerations for ethical review framework
+ Considerations for building and using ethical and
+socially acceptable AI
+ Non-exhaustive list of ethical and societal
+considerations AI principles documents
+ Berkman Klein report
+ Global
+ North America
+ South America
+ Africa
+ Europe
+ Asia
+ Eurasia
+ Asia Pacific
+ Use case studiesSC 42 Highlights
+ISOIEC TR 24368:2022 Overview of ethical
+and societal concerns
+11282022 The Role of International Standards in Artificial Intelligence AI 23SC 42 Artificial IntelligenceSC 42 Highlights
+ISOIEC 5259 Series on Data quality for
+analytics and machine learning ML
+Number Title Editor Current state
+5259-1 Overview, terminology, and examples Suwook Ha KR CD
+5259-2 Data quality measures Kyoung-Sook Kim JP CD
+5259-3 Data quality management requirements and
+guidelinesMartin Saerbeck DE CD
+5259-4 Data quality process framework Whanzong Ma CN CD
+5259-5 Data quality governance Gyeung-Min Kim KR WD
+11282022 The Role of International Standards in Artificial Intelligence AI 24SC 42 Artificial Intelligence
+Data
+management
+life cycle and
+data quality
+managementSC 42 Highlights
+ISOIEC 5259 Series on Data quality for
+analytics and machine learning ML
+Source: ISOIEC 5259-3,  ISO 2022
+11282022 The Role of International Standards in Artificial Intelligence AI 25SC 42 Artificial Intelligence
+THANKS !
+QUESTIONS ?
+REMARKS ?
+11282022 The Role of International Standards in Artificial Intelligence AI 26SC 42 Artificial IntelligenceKey Topics for Organizationsusers using AI Technology
+ISOIEC 42001 AI management system
+Peter Deussen
+peter.deussenmicrosoft.comSC 42 Artificial Intelligence Agenda
+ISOIEC 42001 Artificial Intelligence Management System AIMS
+AIMS audit and certification
+Scope
+Structure
+Example on for requirements, controls and implementation guidance
+11282022 The Role of International Standards in Artificial Intelligence AI 28SC 42 Artificial Intelligence
+ISO management system standards MSS
+help organizations
+ to improve their performance by specifying
+repeatable steps that organizations
+consciously implement to achieve their
+goals and objectives
+ to create an organizational culture that
+reflexively engages in a continuous cycle of
+self-evaluation, correction and improvement
+of operations and processes through
+heightened employee awareness and
+management leadership and commitmentAIMS is a
+ Management system standard on the
+responsible development and use of AI
+ Comparable with ISO 9001, ISOIEC 27001,
+etc.
+ Highly strategic: High political impact and
+market relevance expectedISOIEC 42001 Artificial Intelligence
+Management System AIMS
+11282022 The Role of International Standards in Artificial Intelligence AI 29SC 42 Artificial Intelligence ISOIEC 42001
+AIMS will be an auditable and certifiable
+standard!
+ Audits are a vital part of the management system approach as they enable a
+company or organization to check how well their achievements meet their objectives
+and show conformity to the standard.
+ ISO recognises different forms of assessment:
+1stparty  the same organisation
+2ndparty  customersupplier in a relationship with the organisation
+3rdparty  independent organisation, trusted by both parties
+ ISO calls this conformity assessment: https:www.iso.orgconformity-
+assessment.html
+11282022 30 The Role of International Standards in Artificial Intelligence AISC 42 Artificial Intelligence ISOIEC 42001 Artificial Intelligence
+Management System AIMS
+Scope
+This document specifies the requirements and
+provides guidance for establishing, implementing,
+maintaining and continually improving an AI
+management system within the context of an
+organization.
+This document is intended for use by an organization
+providing or using products or services that utilize AI
+systems. This document helps the organization develop
+or use AI systems responsibly in pursuing its
+objectives and meet applicable regulatory
+requirements, obligations related to interested
+parties and expectations from them .
+This document is applicable to any organization,
+regardless of size, type and nature, that provides or uses
+products or services that utilize AI systems.Editor: Marta Janczarski IE
+Current status:
+ DIS
+ Publication expected mid 2023
+11282022 The Role of International Standards in Artificial Intelligence AI 31SC 42 Artificial Intelligence ISOIEC 42001
+Overall Structure
+Management part Clause 5  10
+Requirements on how to manage AI
+system in a responsible way
+ Mandatory for compliance
+ Structure and template requirements provided by
+ISOIEC JTC 1 Supplement Common Text
+ AIMS adopts the Common Text with minimal
+changes to maintain compatibility with other MSSControl part Annex A and implementation
+guidance Annex B
+Technical and organizational measures in
+support of management requirements
+ Optional for compliance, but organizations have to
+provide rationale if a control is not implemented
+ Described in terms of
+ Objectives
+ Controls to achieve an objective
+ Implementation guidanceClause 1: Scope
+Clause 2: Normative referencesClause 3: Terminology
+Clause 4: Abbreviations
+11282022 The Role of International Standards in Artificial Intelligence AI 32SC 42 Artificial IntelligenceISOIEC 42001
+Management part - Requirements
+11282022 33
+Context of
+the
+organisation
+Understanding the
+organisationand
+its context
+Understanding the
+needs and
+expectations of
+interested parties
+Determining the
+scope of the
+management
+system
+The management
+system
+Leadership
+Leadership and
+commitment
+Policy
+Organisational
+roles,
+responsibilities and
+authorities
+Planning
+Actions to address
+risks and
+opportunities
+AI system impact
+assessment
+Management
+system objectives
+and planning to
+achieve them
+Support
+Resources
+Competence
+Awareness
+Communication
+Documented
+information
+Operation
+Operational
+planning and
+control
+AI risk assessment
+AI risk treatment
+AI system impact
+assessment
+Performance
+evaluation
+Monitoring,
+measurement,
+analysis and
+evaluation
+Internal audit
+Management
+review
+Improvement
+Non-conformity
+and corrective
+action
+Continual
+improvement
+The Role of International Standards in Artificial Intelligence AISC 42 Artificial Intelligence
+Policies
+related to AI
+AI policy
+Alignment with
+other
+organizational
+policies
+Review of the AI
+policy
+Review of the AI
+policy
+Internal
+organization
+AI roles and
+responsibilities
+Reporting of
+concerns
+Resources for
+AI systems
+Resource
+documentation
+Data resources
+Tooling
+resources
+System and
+computing
+resources
+Human
+resources
+Assessing
+impacts of AI
+systems
+AI system
+impact
+assessment
+process
+Documentation
+of AI system
+impact
+assessments
+Assessing AI
+system impact
+on individuals
+and groups of
+individuals
+Assessing
+societal impacts
+of AI systems
+AI system life
+cycle
+Management
+guidance for AI
+system
+development
+Objectives for
+responsible
+development of
+AI system
+Processes for
+responsible
+design and
+development of
+AI systems
+AI system
+development
+life cycle
+AI system
+requirements
+and
+specification
+Documentation
+of AI system
+design and
+development
+AI system
+verification and
+validation
+AI system
+deployment
+AI system
+operation and
+monitoring
+AI system
+technical
+documentation
+AI system
+recording of
+event logs
+Data for AI
+systems
+Data for
+development
+and
+enhancement of
+AI system
+Acquisition of
+data
+Quality of data
+for AI systems
+Data
+provenance
+Data
+preparation
+Information
+for interested
+parties
+System
+documentation
+and information
+for users
+Understandabilit
+y and
+accessibility of
+provided
+information
+External
+reporting
+Communication
+of incidents
+Information for
+interested
+parties
+Use of AI
+systems
+Processes for
+responsible use
+of AI
+Objectives for
+responsible use
+of AI system
+Intended use of
+the AI system
+Third party
+relationships
+Allocating
+responsibilities
+Suppliers
+Customers
+11282022 34ISOIEC 42001
+Controls and implementation guidance
+The Role of International Standards in Artificial Intelligence AISC 42 Artificial Intelligence
+Requirement
+The organization shallassess the potential
+consequences for individuals and societies that can
+result from the development or use of AI systems. The
+AI system impact assessment shalldetermine the
+potential consequences an AI systems deployment and
+intended use has on individuals and societies. The
+result of the system impact assessment shallbe
+documented and be made available to relevant
+interested parties where appropriate.
+The organization shouldconsider whether an AI
+system affects:
+the legal position or life opportunities of individuals;
+the physical or psychological well-being of
+individuals;
+universal human rights;
+society.
+The organization canintegrate the AI system impact
+assessment into their risk assessment Clause 6.1.2. Implementation guidance
+Topics the organization should consider can include,
+but are not limited to:
+a circumstances under which an AI system impact
+assessment should be performed, can include
+1. criticality of the intended purpose and context
+in which the AI system is used or any
+significant changes to these;
+2. complexity of AI technology and the level of
+automation of AI systems or any significant
+changes to that;
+3. sensitivity of data types and sources
+processed by the AI system or any significant
+changes to that.
+  ISOIEC 42001
+Requirements and controls
+Example: AI system impact assessment
+Objective
+To assess AI system impacts to individuals and
+societies affected by the AI system throughout its life
+cycle.
+Control
+The organization should assess the potential
+consequences for individuals and societies that would
+result from the development or use of AI systems.
+ . . .
+11282022 The Role of International Standards in Artificial Intelligence AI 35SC 42 Artificial Intelligence
+THANKS !
+QUESTIONS ?
+REMARKS ?
+11282022 The Role of International Standards in Artificial Intelligence AI 36SC 42 Artificial IntelligenceKey Topics for Organizationsusers using AI Technology
+ISOIEC 23894  Guidance on risk management
+Peter Deussen
+peter.deussenmicrosoft.comSC 42 Artificial Intelligence Agenda
+AI risks
+Risk management: ISO 31000 overview
+ISOIEC 23894 Guidance on risk management
+Principles, framework and processes
+11282022 The Role of International Standards in Artificial Intelligence AI 38SC 42 Artificial Intelligence
+AI RISKS ARE RELATED TO
+Fairness Environmental
+impact
+Security Accountability
+Safety Maintainability
+Privacy Availability and
+quality of data
+Robustness AI expertise
+Transparency 
+explainabilityCAUSED BY
+Level of automation
+Lack of transparency and explainability
+Complexity of environment
+System life cycle issues
+System hardware issues
+Technology readiness
+Machine learning issues
+11282022 The Role of International Standards in Artificial Intelligence AI 39Artificial Intelligence RisksSC 42 Artificial Intelligence Risk Management- Overview
+Risk management is described in
+ISO 31000:2018
+ Well accepted in industry
+Approach comprises of
+ Principles to follow
+ Management framework
+ Processes focus for today
+ISOIEC 23894 follows this approach
+and adopts ISO 31000 entirely, but
+adds AI specific considerations
+11282022 The Role of International Standards in Artificial Intelligence AI 40Source: ISOIEC 31000:2018,  ISOSC 42 Artificial Intelligence ISOIEC 23894
+Artificial Intelligence Risk Management
+Scope
+This document provides guidance on how
+organizations that develop, produce, deploy
+or use products, systems and services that
+utilize artificial intelligence AI can manage
+risk specifically related to AI . The guidance
+also aims to assist organizations to
+integrate risk management into their AI-
+related activities and functions. It moreover
+describes processes for the effective
+implementation and integration of AI risk
+management.
+The application of these guidance can be
+customized to any organization and its
+context.Editor: Peter Deussen DE
+Current state: FDIS ballot about to start,
+publication expected for early 2023
+ Please note:
+ Guidance only!
+ No requirements
+ No basis for certification
+ Relates to risks to the organization
+ Impact to individuals, society, environment
+considered as part of organizational risk
+management
+11282022 The Role of International Standards in Artificial Intelligence AI 41SC 42 Artificial Intelligence
+Principles of risk management
+ISO 31000
+PRINCIPLES
+Integrated
+Structured and comprehensive
+Customized
+Inclusive
+Dynamic
+Best available information
+Human and cultural factors
+Continual improvementISOIEC 23894
+AI SPECIFIC INTERPRETATION
+Extended need to understand stakeholder
+needs and expectations
+Nature of AI systems
+Implications to the organization itself
+Consideration of societal concerns
+11282022 The Role of International Standards in Artificial Intelligence AI 42SC 42 Artificial Intelligence
+Risk management framework
+ISO 31000 FRAMEWORK
+COMPONENTS
+Leadership and commitment
+Integration
+Design
+Implementation of risk management
+Evaluation of risk management
+Improvement of risk managementISOIEC 23894
+AI SPECIFIC INTERPRETATION
+Communicate responsible use  development of AI systems
+Understand the context of the organization
+ Social, cultural, political, legal, regulatory, financial, technological,
+economic and environmental factors
+ key drivers and trends
+ stakeholder relationships, perceptions, values, needs and expectations
+ contractual relationships and commitments;
+ complexity of networks and dependencies
+ Internal factors, e.g., culture and values, organizational strucutres,
+capabilities, data
+Define roles and responsibilities, allocate resource
+Determine needed information for continual improvement
+11282022 The Role of International Standards in Artificial Intelligence AI 43SC 42 Artificial IntelligenceRisk Management Process
+1. Define scope, Context, Risk Criteria
+Scope
+ Objectives and expected
+outcomes
+ time, location, specific
+inclusions and exclusions;
+ tools and techniques;
+ resources and responsibilities
+ relationships with other
+projects, processes and
+activities.Context
+ Societal, legal and contractual
+environment of the organization
+ Stakeholder identificaiton, their
+needs and expectectationRisk Criteria
+ the nature and type of
+uncertainties that can affect
+outcomes and objectives both
+tangible and intangible
+ how consequences and
+likelihood will be defined and
+measured
+ time-related factors
+ consistency in the use of
+measurements
+ how the level of risk is to be
+determined
+ how combinations and
+sequences of multiple risks will
+be taken into account
+ the organizations capacity
+11282022 The Role of International Standards in Artificial Intelligence AI 44SC 42 Artificial IntelligenceRisk Management Process
+2. Risk Assessment
+Risk identification
+ Identification of assets and
+their value:
+ Assets of and their value
+to the organization
+ Assets of and their value
+to individuals
+ Assets of and their value
+to society
+ Identification of risk
+sources
+ Identification of potential
+outcomes
+ Identification of controls
+ Identification of
+consequencesRisk analysis
+ Assessment of
+consequences:
+ criticality of the impact
+ tangible and intangible
+impacts
+ criteria used to establish
+the overall impact
+ Assessment of likelihoodRisk evaluation
+ Compare the results of the
+risk analysis with the
+established risk criteria to
+determine where additional
+action is required
+11282022 The Role of International Standards in Artificial Intelligence AI 45SC 42 Artificial IntelligenceRisk Management Process
+3. Risk Treatment
+Treatment options
+ avoiding the risk by deciding not to start or continue with the activity
+ taking or increasing the risk in order to pursue an opportunity
+ removing the risk source
+ changing the likelihood
+ changing the consequences
+ sharing the risk for instance, through contracts or buying
+insurance
+ retaining the risk by informed decision
+11282022 The Role of International Standards in Artificial Intelligence AI 46SC 42 Artificial IntelligenceRisk Management Process
+Additional steps
+Communication and
+consultation
+ Involvement and
+information of
+stakeholders
+ Communication of
+policies and
+commitmentsMonitoring and review
+ Determining the
+effectiveness of the risk
+management
+processes
+ ImprovementsRecording and reporting
+ Information to be
+recorded
+ Reporting requirements
+11282022 The Role of International Standards in Artificial Intelligence AI 47SC 42 Artificial Intelligence
+THANKS !
+QUESTIONS ?
+REMARKS ?
+11282022 The Role of International Standards in Artificial Intelligence AI 48SC 42 Artificial IntelligenceKey Topics for Organizationsusers using AI Technology
+ISOIEC 42005 AI system impact assessment
+Peter Deussen
+peter.deussenmicrosoft.comSC 42 Artificial Intelligence Agenda
+Motivation: Gap between ISOIEC 42001 and ISOIEC 23894
+ISOIEC 42005 AI system impact assessment
+Main contents
+11282022 The Role of International Standards in Artificial Intelligence AI 50SC 42 Artificial Intelligence
+The gap between
+ISOIEC 42001 and
+ISOIEC 23894
+The Role of International Standards in Artificial Intelligence AI
+ISOIEC 42001 AI
+management
+system
+ISOIEC 23894 
+Guidance on risk
+management
+ISOIEC 42005 
+AI system impact
+assessment
+ contains recommendations to
+take into account factors such
+as privacy, security, safety,
+fairness, transparency while
+managing organizational risks
+ those factors are related to
+external stakeholders
+individuals, society
+ requires that organizations perform an AI
+System Impact Assessment, considering
+impacts to
+ legal position or life opportunities of
+individuals;
+ physical or psychological well-being of
+individuals;
+ impacts to human rights
+ contains several guidelines on WHAT to
+consider
+Neither ISOIEC 23894 nor
+ISOIEC 42001 provides any
+guidelines on how to do
+perform the actual AI system
+impact assessment
+Objectives for an AI system impact assessment guidance
+document include:
+ providing organizations with guidance for achieving a
+key requirement of AIMS and assist in achieving
+responsible development and use of AI systems
+ providing organizations with guidance that is necessary
+to institute appropriate AI risk management processes
+11282022 51
+Further related to: ISOIEC FDIS 38507 - Governance
+implications of the use of artificial intelligence by
+organizationsSC 42 Artificial Intelligence ISOIEC 42005
+AI system impact assessment
+Scope
+This document provides guidance for organizations
+performing AI system impact assessments for
+individuals and societies that can be affected by an AI
+system and its foreseeable applications . It includes
+considerations for how and when to perform such
+assessments and at what stages of the AI system
+lifecycle, as well as guidance for AI system impact
+assessment documentation.
+Additionally, this guidance includes how this AI system
+impact assessment process can be integrated into
+an organizations AI risk management and AI
+management system .
+This document is intended for use by organizations
+developing, providing, or using AI systems.  This
+document is applicable to any organization, regardless
+of size, type and nature.Editor: Peter Deussen DE
+Current state: WD
+ Please note:
+ Guidance only!
+ No requirements
+ No basis for certification
+11282022 The Role of International Standards in Artificial Intelligence AI 52SC 42 Artificial Intelligence
+Implementing an AI system impact
+assessment process
+Documenting the process
+Timing of AI system impact assessment
+Guidance for determining the scope of the
+impact assessment, domain of intended use
+Allocating responsibilities
+Integration into the AI system life cycle
+Establishing thresholds e.g. sensitive uses,
+prohibited uses
+Performing the impact assessment
+Analysing the results of the impact assessment
+Recording and reporting
+Approval process
+Monitoring and reviewMeasures to address harms and
+benefits
+No content available yet
+Not intended to provide full guidance on
+treatment measures risk management,
+but concentrate on technical measures
+from a development and operational
+perspective
+Annexes
+Guidance for use with ISOIEC 42001
+Guidance for use with ISOIEC 23894ISOIEC 42005
+Main contents
+Documenting the AI system impact
+assessment
+Scope of the impact assessment
+System information
+System description
+System features
+System purposes and intended uses
+Algorithm information
+Data information and quality
+Deployment environment
+Geographical area, languages
+Stakeholders
+Potential impacts: Benefits and harms
+System failures and misuse
+11282022 The Role of International Standards in Artificial Intelligence AI 53SC 42 Artificial Intelligence
+THANKS !
+QUESTIONS ?
+REMARKS ?
+11282022 The Role of International Standards in Artificial Intelligence AI 54SC 42 Artificial Intelligence
+Peter Deussen
+National Standards Officer Germany
+Microsoft Deutschland GmbH
+Mobile: 49 151 4406 3650
+E-Mail: peter.deussenmicrosoft.com

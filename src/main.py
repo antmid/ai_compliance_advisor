@@ -1,4 +1,4 @@
-from agents.query_agent import QueryAgent
+from agents.prova import QueryAgent
 from agents.compliance_agent import ComplianceAgent
 
 # Initialize the agents

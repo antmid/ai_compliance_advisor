@@ -1,4 +1,4 @@
-from agents.prova import QueryAgent
+from agents.query_agent import QueryAgent
 from agents.compliance_agent import ComplianceAgent
 
 # Initialize the agents
@@ -8,12 +8,10 @@ compliance_agent = ComplianceAgent()
 #query_agent.debug_database()
 
 # Example user query
-user_question = "What does the GDPR regulate?"
+user_question = "I want to create a software for facial recognition what i have to respect?"
 
 # 1. Retrieve relevant documents
-#documents = query_agent.query(user_question)
-
-documents = query_agent.query("What are the key points of GDPR?")
+documents = query_agent.query("Computer Vision guidelines")
 
 # 2. Generate a structured response
 if documents:

@@ -1,38 +1,7 @@
-from sentence_transformers import SentenceTransformer
-from langchain_chroma import Chroma
-from langchain.embeddings.base import Embeddings
-from dotenv import load_dotenv
-import os
-from langchain_community.document_loaders import TextLoader
-#from langchain_openai import OpenAIEmbeddings
-from langchain_text_splitters import CharacterTextSplitter
-
-load_dotenv()
-
-class HuggingFaceEmbeddings(Embeddings):
-    def __init__(self, model_name="sentence-transformers/all-mpnet-base-v2"):
-        """
-        Initialize HuggingFace embeddings.
-        :param model_name: Pretrained HuggingFace model.
-        """
-        self.model = SentenceTransformer(model_name)
-
-    def embed_query(self, text: str):
-        """
-        Generate an embedding for a query string.
-        :param text: Input text.
-        :return: Embedding vector.
-        """
-        return self.model.encode(text)
-
-    def embed_documents(self, texts: list):
-        """
-        Generate embeddings for a list of documents.
-        :param texts: List of input texts.
-        :return: List of embedding vectors.
-        """
-        return self.model.encode(texts)
-
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.vectorstores import Chroma
+from langchain.document_loaders import TextLoader
 
 class QueryAgent:
     def __init__(self, db_path="data/database/gdpr_database"):
@@ -61,3 +30,8 @@ class QueryAgent:
         results = self.vector_db.similarity_search(question)
         return results[0].page_content if results else "No relevant documents found."
 
+# Usage example
+if __name__ == "__main__":
+    agent = QueryAgent()
+    response = agent.query("What are the key points of GDPR?")
+    print(response)

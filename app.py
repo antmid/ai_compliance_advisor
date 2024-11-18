@@ -5,16 +5,17 @@ from src.pipeline import graph  # Import the compiled graph from your orchestrat
 
 # Configurazione iniziale dell'app Streamlit
 st.set_page_config(
-    page_title="Agentic RAG Chatbot",
-    page_icon="🤖",
+    page_title="AI Compliance Advisor",
+    page_icon="📚👩🏻‍⚖",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-st.title("🤖 Agentic RAG Chatbot")
+# Titolo e descrizione
+st.title("📚👩🏻‍⚖ AI Compliance Advisor")
 st.markdown(
     """
-    Welcome to the **Agentic Retrieval-Augmented Generation (RAG) Chatbot**!
+    Welcome to the **AI Compliance Advisor**!
     Ask questions, and the chatbot will fetch relevant documents, analyze them, and generate concise responses.
     """
 )
@@ -27,33 +28,67 @@ with st.sidebar:
         1. Enter your query in the text box.
         2. The chatbot processes your query using an agentic pipeline.
         3. It retrieves documents, checks relevance, and generates an answer.
-        4. Intermediate steps are shown in the output.
+        4. Intermediate steps are shown with brief descriptions.
         """
     )
     st.markdown("---")
     st.markdown("### Example Queries:")
     st.markdown("- What does the GDPR regulate?")
-    st.markdown("- What are the principles of GDPR?")
-    st.markdown("- Who needs to comply with GDPR?")
+    st.markdown("- What regulations and requirements must I comply with to develop facial recognition software?")
+    st.markdown("- How is Article 20 generally related to facial recognition?")
     st.markdown("---")
-    st.info("💡 Use this interface to explore the capabilities of the RAG pipeline!")
+    st.info("💡 Use this interface to explore the GDPR effortlessly!")
+
+# Gestione dello stato della sessione per la cronologia
+if "history" not in st.session_state:
+    st.session_state.history = []
+
+# Funzione per aggiungere un messaggio alla cronologia
+def add_to_history(question, answer):
+    st.session_state.history.append({"question": question, "answer": answer})
 
 # Input per la domanda
-query = st.text_input("💬 Enter your question:", value="")
+query = st.text_input("💬 **Enter your question:**", value="", help="Type your query to get started.")
 
 # Spazi per l'output
-st.markdown("### Intermediate Steps:")
-intermediate_steps = st.empty()
+st.markdown("### 📜 **Intermediate Steps:**")
+intermediate_steps = st.container()
 
-st.markdown("### Final Answer:")
-final_answer = st.empty()
+st.markdown("### 🧠 **Chat History:**")
+chat_history = st.container()
 
 # Messaggio dinamico per il caricamento
 loading_message = st.empty()
 
+# Funzione per mostrare i passi intermedi con messaggi descrittivi
+def display_intermediate_steps(outputs):
+    with intermediate_steps:
+        for idx, (key, _) in enumerate(outputs):
+            if idx == 0:
+                message = "🔍 Analyzed the GDPR and extracted relevant information."
+            elif idx == 1:
+                message = "🤔 Thinking about the best response."
+            else:
+                message = "✅ Successfully processed the data."
+            st.markdown(
+                f"""
+                <div style="border: 1px solid #ddd; border-radius: 10px; padding: 10px; margin-bottom: 10px;">
+                    <strong>Step {idx + 1}: Node <code>{key}</code></strong>
+                    <p>{message}</p>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+# Funzione per evidenziare i numeri in verde nella risposta finale
+def highlight_numbers(text):
+    import re
+    # Sostituisci i numeri con una versione colorata di verde
+    return re.sub(r"(\d+)", r"<span style='color: green;'>\1</span>", text)
+
 # Esegui il flusso RAG
 if st.button("Submit Query") and query.strip():
-    loading_message.info("Processing your query... Please wait.")
+    loading_message.info("⏳ Processing your query... Please wait.")
     inputs = {"messages": [HumanMessage(content=query)]}
     outputs = []
 
@@ -62,25 +97,41 @@ if st.button("Submit Query") and query.strip():
         for output in graph.stream(inputs):
             for key, value in output.items():
                 outputs.append((key, value))
-                intermediate_steps.markdown(
-                    f"#### Node: `{key}`\n```json\n{value}\n```", unsafe_allow_html=True
-                )
+
+        # Mostra i passi intermedi
+        if outputs:
+            display_intermediate_steps(outputs)
 
         # Estrai la risposta finale
         if outputs:
             final = outputs[-1]
             response = final[1].get("response", None)
             if response:
-                final_answer.markdown(f"**Response:** {response}")
+                # Evidenzia i numeri nella risposta
+                highlighted_response = highlight_numbers(response)
+                add_to_history(query, highlighted_response)  # Aggiungi alla cronologia
             else:
-                final_answer.error("⚠️ Unable to generate a response.")
+                add_to_history(query, "⚠️ Unable to generate a response.")
         else:
-            final_answer.error("⚠️ No output generated by the pipeline.")
+            add_to_history(query, "⚠️ No output generated by the pipeline.")
 
     except Exception as e:
         # Gestione degli errori: Mostra il messaggio e interrompi
-        final_answer.error(f"An error occurred: {e}")
+        add_to_history(query, f"An error occurred: {e}")
 
     finally:
         # Rimuovi il messaggio di caricamento
         loading_message.empty()
+
+# Mostra la cronologia della chat
+with chat_history:
+    for idx, entry in enumerate(st.session_state.history):
+        st.markdown(
+            f"""
+            <div style="border: 1px solid #ddd; border-radius: 10px; padding: 10px; margin-bottom: 10px;">
+                <p><strong>Question {idx + 1}:</strong> {entry['question']}</p>
+                <p><strong>Answer:</strong> {entry['answer']}</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )

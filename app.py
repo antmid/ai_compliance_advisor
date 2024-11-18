@@ -1,8 +1,7 @@
 import streamlit as st
+from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
 from langgraph.graph import StateGraph
-from langgraph.graph.message import add_messages
-from langchain_core.messages import HumanMessage, AIMessage
-from pipeline import graph  # Import the compiled workflow from pipeline.py
+from src.pipeline import graph  # Import the compiled graph from your orchestrator
 
 # Initialize Streamlit app
 st.set_page_config(
@@ -52,25 +51,21 @@ final_answer = st.empty()
 # Run the RAG pipeline
 if st.button("Submit Query") and query.strip():
     st.info("Processing your query... Please wait.")
-    inputs = {"messages": [{"role": "user", "content": query}], "documents": [], "response": ""}
-    intermediate_steps_output = []
+    inputs = {"messages": [HumanMessage(content=query)]}
+    outputs = []
 
-    try:
-        # Execute the graph
-        for event in graph.astream(inputs):
-            # Capture intermediate steps
-            for key, value in event.items():
-                intermediate_steps_output.append((key, value))
-                intermediate_steps.markdown(
-                    f"#### Node: `{key}`\n```json\n{value}\n```", unsafe_allow_html=True
-                )
+    # Execute the pipeline and display intermediate steps
+    for output in graph.stream(inputs):
+        for key, value in output.items():
+            # Log each node's output
+            outputs.append((key, value))
+            intermediate_steps.markdown(
+                f"#### Node: `{key}`\n```json\n{value}\n```", unsafe_allow_html=True
+            )
 
-        # Extract final response
-        final_step = intermediate_steps_output[-1]
-        if final_step[0] == "generate_response" and "response" in final_step[1]:
-            final_answer.markdown(f"**Response:** {final_step[1]['response']}")
-        else:
-            final_answer.error("⚠️ Unable to generate a response.")
-
-    except Exception as e:
-        st.error(f"An error occurred during execution: {e}")
+    # Extract final response
+    final = outputs[-1]
+    if isinstance(final[1], list) and isinstance(final[1][0], (AIMessage, ToolMessage)):
+        final_answer.markdown(f"**Response:** {final[1][0].content}")
+    else:
+        final_answer.error("⚠️ Unable to generate a response.")

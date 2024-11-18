@@ -1,6 +1,6 @@
 # Ai Compliance Chatbot
 
-The Compliance Chatbot is an AI-powered web application designed to provide accurate, regulation-compliant answers to legal and compliance-related questions. It uses a multi-agent architecture: the **Query Agent** retrieves the most relevant documents from a vector database built with embeddings, while the **Compliance Agent** processes the retrieved content and generates a precise answer using a Gemini LLM.
+An AI assistant that provides a list of regulations and guidelines to follow when developing artificial intelligence software, with a particular focus on computer vision. The system answers specific questions such as "What regulations must I comply with for a facial recognition system in Europe?" or "Are there guidelines for ethics in the use of computer vision?" It uses a multi-agent architecture: the **Query Agent** retrieves the most relevant documents from a vector database built with embeddings, while the **Compliance Agent** processes the retrieved content and generates a precise answer using a Gemini LLM.
 
 ## Features
 - Document retrieval using vector embeddings.

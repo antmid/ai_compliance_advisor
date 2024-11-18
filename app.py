@@ -27,7 +27,7 @@ with st.sidebar:
         1. Enter your query in the text box.
         2. The chatbot processes your query using an agentic pipeline.
         3. It retrieves documents, checks relevance, and generates an answer.
-        4. If something fails, you'll be asked to try a new question.
+        4. Intermediate steps are shown in the output.
         """
     )
     st.markdown("---")
@@ -48,11 +48,15 @@ intermediate_steps = st.empty()
 st.markdown("### Final Answer:")
 final_answer = st.empty()
 
+# Messaggio dinamico per il caricamento
+loading_message = st.empty()
+
 # Esegui il flusso RAG
 if st.button("Submit Query") and query.strip():
-    st.info("Processing your query... Please wait.")
+    loading_message.info("Processing your query... Please wait.")
     inputs = {"messages": [HumanMessage(content=query)]}
     outputs = []
+
     try:
         # Esegui la pipeline e mostra i passi intermedi
         for output in graph.stream(inputs):
@@ -75,10 +79,8 @@ if st.button("Submit Query") and query.strip():
 
     except Exception as e:
         # Gestione degli errori: Mostra il messaggio e interrompi
-        st.error(f"An error occurred: {e}")
-        st.warning("⚠️ Something went wrong. Please try asking another question.")
+        final_answer.error(f"An error occurred: {e}")
 
-# Chiedi all'utente se vuole continuare
-st.markdown("---")
-if st.button("Ask Another Question"):
-    st.experimental_rerun()  # Ricarica la pagina per un nuovo ciclo
+    finally:
+        # Rimuovi il messaggio di caricamento
+        loading_message.empty()

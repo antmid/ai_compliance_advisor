@@ -1,0 +1,6 @@
+# Fixed requirements for Colab compatibility
+torch==2.2.0
+torchvision==0.17.0
+sentence-transformers==2.5.1
+transformers==4.38.0
+langchain-huggingface==0.0.1

@@ -1,7 +1,7 @@
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import Chroma
-from langchain.document_loaders import TextLoader
+from langchain_community.vectorstores import Chroma
+from langchain_community.document_loaders import TextLoader
 
 class QueryAgent:
     def __init__(self, db_path="data/database/gdpr_database"):
